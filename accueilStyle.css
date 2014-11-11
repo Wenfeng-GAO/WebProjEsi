@@ -1,0 +1,97 @@
+html {
+	font-family: sans-serif;
+}
+
+/*div, form, ul {
+	display: block;
+
+}
+*/
+
+img {
+	max-width: 100px;
+	max-height: 50px;
+}
+
+li {
+	display: inline-block;
+	font-size: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+}
+
+.header_container {
+	position: fixed;
+	top: 2px;	
+	/*margin-bottom: 150px;*/
+	width: 100%;
+	min-height: 60px;
+	background-color: lightgrey;
+}
+
+.header_container > h1 {
+	/*display: inline-block;*/
+	color: white;
+	text-align: center;
+}
+
+.images_container {
+	display: inline-block;
+	float: left;
+	padding: 1px 1px;
+}
+
+.signin_table {
+	margin-top: 140px;
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid grey;
+	border-radius: 0.5em;
+}
+
+.signin_header {
+	background-color: lightsteelblue;
+	color: white;
+	/*padding: 20px;*/
+}
+
+form {
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+input[name="password"], input[name="username"] {
+	background-color: lightyellow;
+	width: 90%;
+	min-height: 25px;
+	/*border-radius: 3px;*/
+	/*border: 1px none;*/
+}
+
+input[type="submit"] {
+	padding: 5px 10px;
+	background-color: lightgrey;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0 none;
+	font-weight: bold;
+
+}
+
+h3 {
+	margin-left: 20px;
+	padding: 10px;
+}
+
+.footer_container {
+	/*height: 10%;*/
+	position: fixed;
+	width: 100%;
+	bottom: 2px;
+	background-color: lightgrey;
+	/*text-align: center;*/
+	text-align: right;
+
+}
