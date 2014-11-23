@@ -14,7 +14,7 @@
 		<div class="signin_table">
 			<div class="signin_header"><h3>Sign In</h3></div>
 			<div class="signin_body">
-				<form>
+				<form method="post">
 					<label><b>Username</b></label><br>
 					<input name="username" type="text" autofocus="autofocus"><br><br>
 					<label><b>Password</b></label><br>

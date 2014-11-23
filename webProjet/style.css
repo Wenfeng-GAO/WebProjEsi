@@ -1,0 +1,109 @@
+html {
+	font-family: sans-serif;
+	display: block;
+}
+
+#statebar {
+	text-align: right;
+	color: steelblue;
+}
+
+header {	
+	/*width: 100%;
+	min-height: 60px;*/
+	background-color: grey;
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+
+nav {
+	color: white;
+	width: 200px;
+	height: 500px;
+	padding: 5px;
+	float: left;
+	border-width: 0;
+	/*background-color: steelblue;	*/
+}
+
+nav p {
+	margin-left: 10px;
+}
+
+#manager_chercheur {
+	background-color: lightgrey;
+	min-height: 300px;
+}
+
+#partners {
+	background-color: lightgrey;	
+}
+
+nav li {
+	font-size: small;
+}
+
+img {
+	max-width: 150px;
+	max-height: 100px;
+}
+
+section {
+	width: 400px;
+	float: left;
+	padding: 10px;
+	min-height: 120px;
+
+}
+
+footer {
+	clear: both;
+	padding: 2px;
+	text-align: center;
+	background-color: grey;
+	color: white;
+}
+
+footer li {
+	font-size: small;
+	margin-right: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+/**   Login page   **/
+#login_form {
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 150px;
+	margin-bottom: 160px;
+	border: 2px solid grey;
+	border-radius: 0.5em;
+}
+
+#login_header {
+	background-color: steelblue;
+	color: white;
+}
+
+form {
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+input[name="password"], input[name="username"] {
+	background-color: lightyellow;
+	width: 90%;
+	min-height: 25px;
+}
+
+input[type="submit"] {
+	padding: 5px 10px;
+	background-color: lightgrey;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0 none;
+	font-weight: bold;
+}
