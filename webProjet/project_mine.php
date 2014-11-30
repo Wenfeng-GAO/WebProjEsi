@@ -1,5 +1,6 @@
-<?php include('includes/title.inc.php'); ?>
+<?php include('./includes/title.inc.php'); ?>
 <?php include 'includes/logout.inc.php';?>
+
 <!DOCTYPE html>
 <html>
 
@@ -13,8 +14,8 @@
 	<?php 
 	include('includes/statebar.inc.php'); 
 	include('includes/header.inc.php'); 
-	include('includes/nav.inc.php'); 
-	include('includes/section.chercheur.list.inc.php'); 
+	include('includes/nav.chercheur.inc.php'); 
+	include('includes/section.project.mine.inc.php'); 
 	include('includes/footer.inc.php'); 
 	?>
 </body>

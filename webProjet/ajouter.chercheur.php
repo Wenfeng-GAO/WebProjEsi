@@ -14,7 +14,7 @@
 	include('includes/statebar.inc.php'); 
 	include('includes/header.inc.php'); 
 	include('includes/nav.inc.php'); 
-	include('includes/section.chercheur.list.inc.php'); 
+	include('includes/section.create.chercheur.inc.php'); 
 	include('includes/footer.inc.php'); 
 	?>
 </body>

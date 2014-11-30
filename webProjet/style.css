@@ -24,21 +24,21 @@ nav {
 	padding: 5px;
 	float: left;
 	border-width: 0;
-	/*background-color: steelblue;	*/
+	background-color: steelblue;	
 }
 
 nav p {
 	margin-left: 10px;
 }
 
-#manager_chercheur {
+/*#manager_chercheur {
 	background-color: lightgrey;
 	min-height: 300px;
 }
 
 #partners {
 	background-color: lightgrey;	
-}
+}*/
 
 nav li {
 	font-size: small;
@@ -50,7 +50,7 @@ img {
 }
 
 section {
-	width: 400px;
+	/*width: 400px;*/
 	float: left;
 	padding: 10px;
 	min-height: 120px;
