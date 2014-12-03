@@ -15,7 +15,6 @@
 	include('./includes/statebar.inc.php'); 
 	include('./includes/header.inc.php'); 
 	include('./includes/nav.chercheur.inc.php'); 
-	include('./includes/section.participate.inc.php'); 
 	include('./includes/footer.inc.php'); 
 	?>
 </body>

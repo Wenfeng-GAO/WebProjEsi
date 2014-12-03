@@ -107,3 +107,29 @@ input[type="submit"] {
 	border: 0 none;
 	font-weight: bold;
 }
+
+/*** *******************************************************
+
+=======  project_mine.php ==================================
+
+***********************************************************/
+
+div.my_project_container {
+	display: block;
+	background-color: lightsteelblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
