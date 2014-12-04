@@ -27,7 +27,7 @@
     <div id="login_form">
         <div id="login_header"><h3>Sign In</h3></div>
         <div id="login_body">
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form id="formlogin" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <label><b>Username</b></label><br>
                 <input name="username" type="text" autofocus="autofocus"><br><br>
                 <label><b>Password</b></label><br>

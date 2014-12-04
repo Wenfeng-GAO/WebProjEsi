@@ -15,6 +15,6 @@
 		}
 		// end session and redirect
 		session_destroy();
-		header("Location: http://localhost/project_esigelec/login.php");
+		header("Location: http://localhost/project_esigelec/index.php");
 		exit();
 	}

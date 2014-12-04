@@ -3,21 +3,16 @@ html {
 	display: block;
 }
 
-#statebar {
+/*************************************************
+*----------  index.php   ------------------------*
+*************************************************/
+
+#state_bar {
 	text-align: right;
-	color: steelblue;
-}
-
-header {	
-	/*width: 100%;
-	min-height: 60px;*/
-	background-color: grey;
-	text-align: center;
 	color: white;
-	padding: 5px;
 }
 
-nav {
+/*nav {
 	color: white;
 	width: 200px;
 	height: 500px;
@@ -31,14 +26,6 @@ nav p {
 	margin-left: 10px;
 }
 
-/*#manager_chercheur {
-	background-color: lightgrey;
-	min-height: 300px;
-}
-
-#partners {
-	background-color: lightgrey;	
-}*/
 
 nav li {
 	font-size: small;
@@ -50,7 +37,6 @@ img {
 }
 
 section {
-	/*width: 400px;*/
 	float: left;
 	padding: 10px;
 	min-height: 120px;
@@ -72,7 +58,7 @@ footer li {
 	display: inline-block;
 }
 
-/**   Login page   **/
+*   Login page   *
 #login_form {
 	max-width: 400px;
 	margin-right: auto;
@@ -92,21 +78,29 @@ form {
 	margin-left: 20px;
 	font-size: 13px;
 }
+#formlogin {
+	margin-left: 20px;
+	font-size: 13px;
+}
+#login_body {
+	margin-left: 20px;
+	font-size: 13px;
+}
 
 input[name="password"], input[name="username"] {
 	background-color: lightyellow;
 	width: 90%;
 	min-height: 25px;
-}
+}*/
 
-input[type="submit"] {
+/*input[type="submit"] {
 	padding: 5px 10px;
 	background-color: lightgrey;
 	cursor: pointer;
 	border-radius: 5px;
 	border: 0 none;
 	font-weight: bold;
-}
+}*/
 
 /*** *******************************************************
 
@@ -114,10 +108,10 @@ input[type="submit"] {
 
 ***********************************************************/
 
-div.my_project_container {
+/*div.my_project_container {
 	display: block;
 	background-color: lightsteelblue;
-}
+}*/
 
 
 
@@ -133,3 +127,4 @@ div.my_project_container {
 
 
 
+*/*/
