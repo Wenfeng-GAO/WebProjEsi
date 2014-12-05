@@ -1,7 +1,60 @@
+
+/*************************************************
+*----------  Web Framework  ---------------------*
+*************************************************/
+
 html {
 	font-family: sans-serif;
-	display: block;
 }
+
+body {
+	height: 100%;
+}
+
+header {
+	background-color: grey;
+	color: white;
+	padding: 18px 0px;
+	text-align: center;
+}
+
+img {
+	width: 128px;
+	height: 64px;
+	border: 1px solid steelblue;
+}
+
+footer {
+	padding: 1px 4px;
+	text-align: center;
+	background-color: grey;
+	color: white;
+}
+
+footer  li {
+	font-size: small;
+	margin: 0px 10px;
+	display: inline-block;
+}
+
+input[name="password"], input[name="username"] {
+	background-color: lightyellow;
+	width: 90%;
+	min-height: 25px;
+}
+
+input[type="submit"] {
+	min-width: 50px;
+	min-height: 2em;
+	padding: 5px 10px;
+	background-color: steelblue;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0 none;
+	font-weight: bold;
+	color: white;
+}
+
 
 /*************************************************
 *----------  index.php   ------------------------*
@@ -9,8 +62,120 @@ html {
 
 #state_bar {
 	text-align: right;
+}
+
+#login {
+	min-width: 50px;
+	min-height: 2em;
+	padding: 5px 10px;
+	background-color: steelblue;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0 none;
+	font-weight: bold;
 	color: white;
 }
+
+#body {
+	padding: 32px 0px 16px; 
+}
+
+#site_intro {
+	width: 60%;
+	margin: 0px auto;
+	background-color: #eee;
+	opacity: 0.6;
+	padding: 0px 8px 2px;
+}
+
+#intro_title {
+	color: white;
+	background-color: steelblue;
+	padding: 8px 4px;
+}
+
+#recent_news {
+	width: 60%;
+	margin: 32px auto 16px;
+	background-color: #eee;
+	opacity: 0.6;
+	padding: 0px 8px 2px;
+}
+
+#news_title {
+	color: white;
+	background-color: steelblue;
+	padding: 8px 4px;
+}
+
+#news_list {
+	list-style-type: square;
+}
+	
+#news_list > li {
+	margin: 16px 0px;
+}
+
+#partner_imgs {
+	width: 60%;
+	margin: 32px auto 16px;
+	background-color: #eee;
+	opacity: 0.6;
+	padding: 0px 8px 2px;
+}
+
+#img_title {
+	color: white;
+	background-color: steelblue;
+	padding: 8px 4px;
+}
+
+#img_container {
+	margin: 0px auto;
+}
+
+#img_container > img {
+	display: inline-block;
+	margin: 0px 8px;
+}
+
+
+
+
+
+/*************************************************
+*----------  login.php   ------------------------*
+*************************************************/
+
+#login_form_container {
+	max-width: 400px;
+	margin: 20% auto;
+	border: 2px solid grey;
+	border-radius: 0.5em;
+}
+
+#login_header {
+	background-color: steelblue;
+	padding: 2px 0px;
+	color: white;
+}
+
+#login_body {
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+#login_form {
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+/*intro_content {
+	background-color: #eee;
+	padding: 4px;
+	opacity: 0.6;
+}*/
+
 
 /*nav {
 	color: white;
@@ -59,7 +224,7 @@ footer li {
 }
 
 *   Login page   *
-#login_form {
+#login_form_container {
 	max-width: 400px;
 	margin-right: auto;
 	margin-left: auto;
@@ -74,18 +239,22 @@ footer li {
 	color: white;
 }
 
-form {
-	margin-left: 20px;
-	font-size: 13px;
-}
-#formlogin {
-	margin-left: 20px;
-	font-size: 13px;
-}
 #login_body {
 	margin-left: 20px;
 	font-size: 13px;
 }
+
+#login_form {
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+form {
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+
 
 input[name="password"], input[name="username"] {
 	background-color: lightyellow;

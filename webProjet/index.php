@@ -12,7 +12,6 @@
 	<?php 
 	include('includes/statebar.inc.php'); 
 	include('includes/header.inc.php'); 
-	include('includes/nav.inc.php');
 	include('includes/section.index.inc.php'); 
 	include('includes/footer.inc.php'); 
 	?>

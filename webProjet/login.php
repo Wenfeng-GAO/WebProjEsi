@@ -24,10 +24,10 @@
     <?php include('./includes/header.inc.php'); ?>
     
 <!-- the login table -->
-    <div id="login_form">
-        <div id="login_header"><h3>Sign In</h3></div>
+    <div id="login_form_container">
+        <div><h3 id="login_header">Sign In</h3></div>
         <div id="login_body">
-            <form id="formlogin" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form id="login_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <label><b>Username</b></label><br>
                 <input name="username" type="text" autofocus="autofocus"><br><br>
                 <label><b>Password</b></label><br>

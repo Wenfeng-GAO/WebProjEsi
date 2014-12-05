@@ -5,12 +5,12 @@ if (isset($_GET['project_id'])) {
 	$project_leader = '';
 	$project_description = '';
 	$project_participant = '';
-	$project_validity = '';
+	$project_participant_num = '';
 	$is_participated = false;
 	
 	// connection to database
 	include 'includes/connection.inc.php';
-	$sql = "SELECT project_title, project_leader, project_validity, project_description, project_participant_num FROM projects WHERE project_id='$project_id'";
+	$sql = "SELECT project_title, project_leader, project_description, project_participant_num FROM projects WHERE project_id='$project_id'";
 	$sql_participant = "SELECT account_username FROM projects_active JOIN projects USING (project_title) WHERE project_id='$project_id'";
 	$result = $link->query($sql);
 	$result_participant = $link->query($sql_participant);
@@ -19,7 +19,6 @@ if (isset($_GET['project_id'])) {
 			$project_title = $row['project_title'];
 			$project_leader = $row['project_leader'];
 			$project_description = $row['project_description'];
-			$project_validity = $row['project_validity'];
 			$project_participant_num = $row['project_participant_num'];
 		}
 		while($row_participant = $result_participant->fetch_assoc()) {
