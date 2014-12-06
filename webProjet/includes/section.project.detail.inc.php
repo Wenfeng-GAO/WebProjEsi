@@ -34,7 +34,7 @@ if (isset($_GET['project_id'])) {
 // 	echo $project_participant. "<br>";
 // 	echo $project_description. "<br>";
 	?>
-	<section>
+	<section class="section">
 		<div><h1><?php echo $project_title;?></h1></div>
 		<div><p><span>Chef du projet: <b><?php echo $project_leader;?></b></span><br><span>Participants: <b><?php echo $project_participant;?></b></span></div>
 		<div><h3>Desciption</h3><br><br><?php echo $project_description;?></div><br>

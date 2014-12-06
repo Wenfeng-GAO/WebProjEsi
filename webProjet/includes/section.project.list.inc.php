@@ -1,4 +1,4 @@
-<section>
+<section class="section">
 	<h3>We have 10 projects in total:</h3>
 	<?php
 	// connect to the database, get the $link variable

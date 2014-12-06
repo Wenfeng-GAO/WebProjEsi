@@ -7,7 +7,14 @@
 			<input name="login" type="submit" id="login" value="Log in">
 		</form>
 		<?php 
-	} else {
+	} elseif($title == "login") {
+		?>
+		<form action="index.php" >
+			<input name="home" type="submit" id="home" value="Home">
+		</form>
+		<?php
+	}
+	else {
 	?>
 	<form action="includes/logout.inc.php" method="post">
 		<input name="logout" type="submit" id="logout" value="Log out">

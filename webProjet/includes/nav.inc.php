@@ -1,8 +1,11 @@
 <nav>
 	<div id="manager_chercheur">
-		<br>
-		<p><a href="chercheur_management.php">List chercheur</a></p>
-		<p><a href="ajouter.chercheur.php">Ajouter un nouveau chercheur</a></p>
+		<p><a href="chercheur_list.php">Liste de chercheur</a></p>
+		<p><a href="chercheur_ajouter.php">Ajouter chercheur</a></p>
+<!-- 		<ul> -->
+<!-- 			<li><a href="chercheur_management.php">Liste de chercheur</a></li> -->
+<!-- 			<li><a href="ajouter.chercheur.php">Ajouter chercheur</a></li> -->
+<!-- 		</ul> -->
 	</div>
 	<!-- <div id="partners">
 		<ul>
@@ -13,3 +16,4 @@
 	</div> -->
 	
 </nav>
+

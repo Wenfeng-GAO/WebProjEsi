@@ -1,6 +1,6 @@
 <?php
 // location to redirect on success
-$redirect1 = 'http://localhost/project_esigelec/chercheur_management.php';
+$redirect1 = 'http://localhost/project_esigelec/chercheur_list.php';
 $redirect2 = 'http://localhost/project_esigelec/project_list.php';
 
 // open a MySQL connection
@@ -33,5 +33,5 @@ if(isset($_SESSION['authenticate1'])) {
 	exit();
 }
 else {
-	$error = "Invalid username or password.";
+	$error = "Incorrect username or password.";
 }

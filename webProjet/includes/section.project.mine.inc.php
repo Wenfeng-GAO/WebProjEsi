@@ -1,3 +1,4 @@
+<section class="section">
 <?php
 include 'includes/connection.inc.php';
 $username = $_SESSION['authenticate2'];
@@ -30,3 +31,4 @@ if(!$result) {
 	}
 }
 ?>
+</section>

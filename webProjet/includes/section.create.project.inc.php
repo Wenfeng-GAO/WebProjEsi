@@ -20,7 +20,7 @@ if(isset($_POST['create_project'])) {
 }
 ?>
 
-<section>
+<section class="section">
 	<div id="create_project_form_container">
 		<div id="create_project_form_header">
 			<h1>Create a new project</h1>

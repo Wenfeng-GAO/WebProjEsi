@@ -37,11 +37,6 @@ footer  li {
 	display: inline-block;
 }
 
-input[name="password"], input[name="username"] {
-	background-color: lightyellow;
-	width: 90%;
-	min-height: 25px;
-}
 
 input[type="submit"] {
 	min-width: 50px;
@@ -54,6 +49,49 @@ input[type="submit"] {
 	font-weight: bold;
 	color: white;
 }
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #eee;
+	width: 15%;
+	min-width: 150px;
+	margin: 88px 16px 32px 128px;
+	padding: 4px;
+	text-align: center;
+
+}
+nav ul {
+	list-style-type: none;
+}
+nav a:link {
+	color: black;
+}
+nav a:visited {
+	color: black;
+}
+nav a:hover {
+	background-color: steelblue;
+	color: white;
+	padding: 4px 16px;
+}
+
+.section {
+	display: inline-block;
+	/*background-color: #eee;*/
+	width: 55%;
+	min-width: 612px;
+	margin: 88px 128px 32px 16px;
+	height: 90%;
+	min-height: 800px;
+}
+
+
+
 
 
 /*************************************************
@@ -170,6 +208,126 @@ input[type="submit"] {
 	font-size: 13px;
 }
 
+#login_form input[name="password"], #login_form input[name="username"] {
+	background-color: lightyellow;
+	width: 90%;
+	min-height: 25px;
+}
+
+#input_validity {
+	color: steelblue;
+	margin-left: 8px;
+}
+
+
+
+
+
+/*************************************************
+*------------  chercheur_list.php  --------------*
+*************************************************/
+
+#chercheur_list_title {
+	background-color: grey;
+	color: white;
+	padding: 4px 12px;
+	margin-left: 13px;
+}
+#chercheur_list_title span {
+	background-color: steelblue;
+	border: 2px solid white;
+	padding: 16px 16px 4px;
+}
+
+#table_head_chercheur {
+	width: 100%;
+	margin: 88px 0px 32px;
+	padding-left: 12px;
+	table-layout: fixed;
+}
+#index_th {
+	width: 1px;
+}
+.section th {
+	background-color: #aaa;
+	width: 33%;
+	height: 64px;
+	color: white;
+}
+
+#table_data_chercheur {
+	width: 100%;
+	/*padding: 0px 16px;*/
+	/*padding-left: 0px;*/
+	margin: 16px 0px;
+	/*table-layout: fixed;*/
+}
+
+.index_td {
+	width: 1px;
+	background-color: steelblue;
+	color: white;
+}
+
+.td {
+	background-color: steelblue;
+	opacity: .6;
+	color: white;
+	width: 128px;
+	height: 32px;
+	text-align:	 center;
+}
+
+
+
+
+/*************************************************
+*------------  chercheur_ajouter.php  --------------*
+*************************************************/
+
+#create_chercheur_form_header {
+	background-color: lightsteelblue;
+	color: white;
+	padding: 8px;
+}
+
+#create_chercheur_form_body {
+	background-color: #eee;
+	opacity: .7;
+	padding: 64px;
+
+}
+
+#create_chercheur_form_body input[name="password"], 
+#create_chercheur_form_body input[name="username"],
+#create_chercheur_form_body input[name="lastname"],
+#create_chercheur_form_body input[name="firstname"],
+#create_chercheur_form_body input[name="confirm_password"] {
+	background-color: white;
+	width: 60%;
+	min-height: 25px;
+	margin-bottom: 16px;
+}
+
+#create_chercheur_form_body .input_verify {
+	color: red;
+	padding: 4px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#create_account {
+	margin: 16px 0px;
+	padding: 10px 8px;
+}
+
+#create_state {
+	background-color: lightsteelblue;
+	text-align: center;
+	color: white;
+	padding: 8px;
+
+}
 /*intro_content {
 	background-color: #eee;
 	padding: 4px;

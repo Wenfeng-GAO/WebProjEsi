@@ -20,8 +20,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <?php include('./includes/header.inc.php'); ?>
+	<?php include 'includes/statebar.inc.php';?>
+    <?php include('includes/header.inc.php'); ?>
     
 <!-- the login table -->
     <div id="login_form_container">
@@ -32,12 +32,12 @@
                 <input name="username" type="text" autofocus="autofocus"><br><br>
                 <label><b>Password</b></label><br>
                 <input name="password" type="password"><br><br>
-                <input name="login" type="submit" value="Sign in"><?php echo "$error"; ?><br><br>
+                <input name="login" type="submit" value="Sign in"><?php echo "<span id=\"input_validity\">$error</span>"; ?><br><br>
             </form>
         </div>
      </div>  
       
-    <?php include('./includes/footer.inc.php'); ?>
+    <?php include('includes/footer.inc.php'); ?>
 
 </body>
 </html>
