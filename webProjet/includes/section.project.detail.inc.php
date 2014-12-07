@@ -35,9 +35,9 @@ if (isset($_GET['project_id'])) {
 // 	echo $project_description. "<br>";
 	?>
 	<section class="section">
-		<div><h1><?php echo $project_title;?></h1></div>
-		<div><p><span>Chef du projet: <b><?php echo $project_leader;?></b></span><br><span>Participants: <b><?php echo $project_participant;?></b></span></div>
-		<div><h3>Desciption</h3><br><br><?php echo $project_description;?></div><br>
+		<div id="project_detail_title_container"><h1><?php echo $project_title;?></h1></div>
+		<div id="project_detail_member_container"><div>Chef du projet: <span><?php echo $project_leader;?></span></div><div>Participants: <span><?php echo $project_participant;?></span></div></div>
+		<div id="project_detail_description_container"><h3><span>Desciption</span></h3><div id="project_detail_description"><?php echo $project_description;?></div></div>
 		<?php 
 		if(isset($_POST['participate'])) {
 			$project_username = $_SESSION['authenticate2'];
@@ -49,7 +49,7 @@ if (isset($_GET['project_id'])) {
 			}
 		}
 		if($is_participated) {
-			echo '<form action="">You are already in the groupe.<br><input type="submit" disabled="disabled" value="Participated"></form>';
+			echo '<form action=""><input type="submit" name="participated" disabled="disabled" value="Participated"><span id="participate_state">You are already in the groupe</span></form>';
 		} else {
 			
 		?>

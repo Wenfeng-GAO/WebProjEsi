@@ -73,7 +73,7 @@ if(empty($create_state)) {
 else {
 ?>
 <section class="section">
-	<div id="create_state">
+	<div id="chercheur_create_state">
 		<h1><?php echo $create_state;?></h1>
 	</div>
 </section>

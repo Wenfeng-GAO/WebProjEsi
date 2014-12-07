@@ -5,6 +5,7 @@
 
 html {
 	font-family: sans-serif;
+	color: #555;
 }
 
 body {
@@ -22,6 +23,22 @@ img {
 	width: 128px;
 	height: 64px;
 	border: 1px solid steelblue;
+}
+
+#state_bar {
+	text-align: right;
+}
+
+#login {
+	min-width: 50px;
+	min-height: 2em;
+	padding: 5px 10px;
+	background-color: steelblue;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0 none;
+	font-weight: bold;
+	color: white;
 }
 
 footer {
@@ -61,18 +78,17 @@ nav {
 	width: 15%;
 	min-width: 150px;
 	margin: 88px 16px 32px 128px;
-	padding: 4px;
-	text-align: center;
-
+	padding: 4px 0px 4px 32px;
+	text-align: left;
 }
 nav ul {
 	list-style-type: none;
 }
 nav a:link {
-	color: black;
+	color: #007;
 }
 nav a:visited {
-	color: black;
+	color: #007;
 }
 nav a:hover {
 	background-color: steelblue;
@@ -97,22 +113,6 @@ nav a:hover {
 /*************************************************
 *----------  index.php   ------------------------*
 *************************************************/
-
-#state_bar {
-	text-align: right;
-}
-
-#login {
-	min-width: 50px;
-	min-height: 2em;
-	padding: 5px 10px;
-	background-color: steelblue;
-	cursor: pointer;
-	border-radius: 5px;
-	border: 0 none;
-	font-weight: bold;
-	color: white;
-}
 
 #body {
 	padding: 32px 0px 16px; 
@@ -223,6 +223,7 @@ nav a:hover {
 
 
 
+
 /*************************************************
 *------------  chercheur_list.php  --------------*
 *************************************************/
@@ -281,8 +282,10 @@ nav a:hover {
 
 
 
+
+
 /*************************************************
-*------------  chercheur_ajouter.php  --------------*
+*------------  chercheur_new.php  --------------*
 *************************************************/
 
 #create_chercheur_form_header {
@@ -321,124 +324,278 @@ nav a:hover {
 	padding: 10px 8px;
 }
 
-#create_state {
+#chercheur_create_state {
 	background-color: lightsteelblue;
 	text-align: center;
 	color: white;
 	padding: 8px;
-
-}
-/*intro_content {
-	background-color: #eee;
-	padding: 4px;
-	opacity: 0.6;
-}*/
-
-
-/*nav {
-	color: white;
-	width: 200px;
-	height: 500px;
-	padding: 5px;
-	float: left;
-	border-width: 0;
-	background-color: steelblue;	
-}
-
-nav p {
-	margin-left: 10px;
 }
 
 
-nav li {
-	font-size: small;
+
+
+
+
+/*************************************************
+*------------  project_list.php  --------------*
+*************************************************/
+
+#project_list_container {
+	margin-bottom: 120px;
 }
 
-img {
-	max-width: 150px;
-	max-height: 100px;
-}
-
-section {
-	float: left;
-	padding: 10px;
-	min-height: 120px;
-
-}
-
-footer {
-	clear: both;
-	padding: 2px;
-	text-align: center;
+#project_list_title {
 	background-color: grey;
 	color: white;
+	padding: 4px 12px;
+	margin-left: 13px;
 }
-
-footer li {
-	font-size: small;
-	margin-right: 10px;
-	margin-left: 10px;
-	display: inline-block;
-}
-
-*   Login page   *
-#login_form_container {
-	max-width: 400px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 150px;
-	margin-bottom: 160px;
-	border: 2px solid grey;
-	border-radius: 0.5em;
-}
-
-#login_header {
+#project_list_title span {
 	background-color: steelblue;
+	border: 2px solid white;
+	padding: 16px 16px 4px;
+}
+
+#project_container {
+	background-color: #eee;
+	color: white;
+	/*padding-bottom: 16px;*/
+	margin: 0px 14px 64px 14px;
+	font-size: 13px;
+	display: block;
+}
+
+#project_container .project_title {
+	background-color: #eee;
+	opacity: .8;
+	padding-bottom: 1px;
+	/*border: 2px solid steelblue;*/
+	border-bottom: 2px solid white;
+}
+#project_container .project_title span {
+	background-color: steelblue;
+	width: 89px;
+	padding: 16px 8px 16px 8px;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+#project_container .project_leader {
+	padding: 8px;
+	margin-top: 2px;
+	background-color: lightgrey;
 	color: white;
 }
-
-#login_body {
-	margin-left: 20px;
-	font-size: 13px;
+#project_container .project_leader span {
+	font-weight: bold;
+	font-size: 15px;
 }
 
-#login_form {
-	margin-left: 20px;
-	font-size: 13px;
-}
-
-form {
-	margin-left: 20px;
-	font-size: 13px;
-}
-
-
-
-input[name="password"], input[name="username"] {
-	background-color: lightyellow;
-	width: 90%;
-	min-height: 25px;
-}*/
-
-/*input[type="submit"] {
-	padding: 5px 10px;
+#project_container .project_participant_num {
+	padding: 8px;
+	margin-top: 2px;
 	background-color: lightgrey;
+	color: white;
+}
+#project_container .project_participant_num span {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+/*************************************************
+*------------  project_detail.php  --------------*
+*************************************************/
+
+#project_detail_title_container {
+	background-color: steelblue;
+	color: white;
+	padding: 8px;
+}
+
+#project_detail_member_container {
+	background-color: #eee;
+	padding: 0px 8px 0px;
+	margin: 1px 64px 128px 0px;
+	font-size: 13px;
+	border-top: 2px solid steelblue;
+}
+#project_detail_member_container span {
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	color: steelblue;
+}
+#project_detail_member_container div {
+	padding: 6px 0px;
+}
+
+#project_detail_description_container {
+	background-color: #eee;
+	padding-bottom: 8px;
+	margin: 2px 64px 128px 0px;
+	min-height: 256px;
+}
+#project_detail_description_container span {
+	background-color: steelblue;
+	opacity: .8;
+	color: white;
+	padding: 16px 8px 4px;
+}
+#project_detail_description {
+	background-color: #eee;
+	margin: 32px 8px 8px;
+	font-size: 14px;
+	color: #666;
+}
+
+input[name="participated"] {
+	min-width: 50px;
+	min-height: 2em;
+	padding: 5px 10px;
+	background-color: lightsteelblue;
 	cursor: pointer;
 	border-radius: 5px;
 	border: 0 none;
 	font-weight: bold;
-}*/
+	color: white;
+}
 
-/*** *******************************************************
+#participate_state {
+	background-color: steelblue;
+	color: white;
+	opacity: .8;
+	padding: 2px;
+	border: 2px solid steelblue;
+	border-radius: 8px;
+	margin: 16px;
 
-=======  project_mine.php ==================================
+}
 
-***********************************************************/
 
-/*div.my_project_container {
-	display: block;
+
+
+
+
+/*************************************************
+*------------  project_mine.php  --------------*
+*************************************************/
+
+#project_mine_big_container {
+	padding: 16px;
+}
+
+#project_mine_container {
+	background-color: steelblue;
+	color: white;
+	padding: 8px;
+	/*margin: 0px 8px;*/
+}
+
+#project_mine_list_container {
+	margin-bottom: 102px;
+}
+
+#project_mine_list_title {
+	background-color: grey;
+	color: white;
+	padding: 4px 12px;
+	margin-left: 13px;
+}
+#project_mine_list_title span {
+	background-color: steelblue;
+	border: 2px solid white;
+	padding: 16px 16px 4px;
+}
+
+#project_mine_title_container {
+	display: inline-block;
+}
+#project_mine_title_container span {
+	font-size: 24px;
+}
+#project_mine_leader_container {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 13px;
+	font-style: italic;
+	padding-left: 4px;
+}
+
+#project_mine_description_container {
+	background-color: #eee;
+	opacity: .6;
+	padding: 8px 0px;
+	margin: 4px 0px 32px;
+	min-height: 96px;
+	border: 2px solid steelblue;
+	color: #555;
+	border-radius: 4px;
+}
+#project_mine_description_title {
 	background-color: lightsteelblue;
-}*/
+	font-weight: bold;
+	padding: 0px 8px;
+	margin: 0px 0px 4px;
+}
+#project_mine_description {
+	padding: 8px;
+}
+
+
+
+
+
+
+/*************************************************
+*------------  project_filelist.php  --------------*
+*************************************************/
+
+#project_file_list {
+	background-color: steelblue;
+	color: white;
+	margin-bottom: 32px;
+	padding: 8px;
+}
+
+#section_project_file a {
+	display: block;
+	font-size: 13px;
+	padding: 8px;
+}
+#section_project_file a:link {
+	color: #555;
+}
+#section_project_file a:visited {
+	color: lightsteelblue;
+}
+#section_project_file a:hover {
+	color: steelblue;
+}
+#section_project_file a:active {
+	color:lightsteelblue;
+}
+
+#project_fileupload_state {
+	color: steelblue;
+	padding: 8px;
+	margin-top: 32px;
+	font-weight: bold;
+}
+#project_fileupload_state span {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#section_project_file form {
+	padding: 0px 8px;
+	font-size: 13px;
+}
 
 
 
@@ -446,12 +603,45 @@ input[name="password"], input[name="username"] {
 
 
 
+/*************************************************
+*------------  project_new.php  --------------*
+*************************************************/
+
+#create_project_form_header {
+	background-color: steelblue;
+	padding: 8px;
+	margin-bottom: 32px;
+	color: white;
+}
+
+#create_project_form_body {
+	padding: 8px;
+}
+
+#create_project_form_body input[name="project_title"] {
+	background-color: white;
+	width: 45%;
+	min-height: 20px;
+	margin: 4px 16px 16px 0px;
+}
+#create_project_form_body span {
+	font-size: 13px;
+	font-weight: bold;
+	color: steelblue;
+}
+#create_project_form_body label {
+	color: steelblue;
+}
+#create_project_form_body input[name="create_project"] {
+	margin-top: 64px;
+}
+
+#project_create_state {
+	background-color: lightsteelblue;
+	text-align: center;
+	color: white;
+	padding: 8px;
+}
 
 
 
-
-
-
-
-
-*/*/

@@ -1,10 +1,11 @@
 <?php
 $title_verify = "";
+$create_state = "";
 if(isset($_POST['create_project'])) {
 	// connection to database
 	include 'includes/connection.inc.php';
 	if(empty($_POST['project_title'])) {
-		$title_verify = "Title can't be blank";
+		$title_verify = "<span>Title can't be blank</span>";
 	} else {
 		$username = $_SESSION['authenticate2'];
 		$title = $_POST['project_title'];
@@ -12,14 +13,14 @@ if(isset($_POST['create_project'])) {
 		$sql_insert_project = "INSERT INTO projects (project_title, project_description, project_participant_num, project_leader) VALUES ('$title', '$description', '1', '$username')";
 		$sql_insert_participant = "INSERT INTO projects_active (project_title, account_username) VALUES ('$title', '$username')";
 		if($link->query($sql_insert_project) && $link->query($sql_insert_participant)) {
-			die('Project created successfully.');
+			$create_state = 'Project created successfully';
 		} else {
-			die('Failed to create project. Please try later.');
+			$create_state = 'Failed to create project. Please try later';
 		}
 	}
 }
+if(empty($create_state)) {
 ?>
-
 <section class="section">
 	<div id="create_project_form_container">
 		<div id="create_project_form_header">
@@ -36,3 +37,14 @@ if(isset($_POST['create_project'])) {
 		</div>
 	</div>
 </section>
+<?php 
+} else {
+?>
+<section class="section">
+	<div id="project_create_state">
+		<h1><?php echo $create_state;?></h1>
+	</div>
+</section>
+<?php
+}
+?>
