@@ -2,7 +2,7 @@
 	session_start();
 	// if session variable not set, redirect to login page
 	if(!(isset($_SESSION['authenticate1']) || isset($_SESSION['authenticate2']))) {
-		header("Location: http://localhost/project_esigelec/login.php");
+		header("Location: ../login.php");
 		exit();
 	}
 	// run only if the logout button has been clicked
@@ -15,6 +15,6 @@
 		}
 		// end session and redirect
 		session_destroy();
-		header("Location: http://localhost/project_esigelec/index.php");
+		header("Location: ../index.php");
 		exit();
 	}

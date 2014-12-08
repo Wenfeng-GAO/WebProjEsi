@@ -1,21 +1,31 @@
 <?php
 $title_verify = "";
 $create_state = "";
-if(isset($_POST['create_project'])) {
+if (isset ( $_POST ['create_project'] )) {
 	// connection to database
 	include 'includes/connection.inc.php';
-	if(empty($_POST['project_title'])) {
+	if (empty ( $_POST ['project_title'] )) {
 		$title_verify = "<span>Title can't be blank</span>";
 	} else {
-		$username = $_SESSION['authenticate2'];
-		$title = $_POST['project_title'];
-		$description = $_POST['project_description'];
-		$sql_insert_project = "INSERT INTO projects (project_title, project_description, project_participant_num, project_leader) VALUES ('$title', '$description', '1', '$username')";
-		$sql_insert_participant = "INSERT INTO projects_active (project_title, account_username) VALUES ('$title', '$username')";
-		if($link->query($sql_insert_project) && $link->query($sql_insert_participant)) {
-			$create_state = 'Project created successfully';
-		} else {
+		$project_title = $_POST ['project_title'];
+		$sql_project_title = "SELECT project_title FROM projects WHERE project_title='$project_title'";
+		$result = $link->query ( $sql_project_title );
+		if (! $result) {
 			$create_state = 'Failed to create project. Please try later';
+		} else if (! empty ( $result->fetch_assoc () )) {
+			$title_verify = "Title is already taken";
+		} else {
+			$username = $_SESSION ['authenticate2'];
+			$title = $_POST ['project_title'];
+			$description = htmlspecialchars ( $_POST ['project_description'], ENT_QUOTES );
+			$description = nl2br ( $description );
+			$sql_insert_project = "INSERT INTO projects (project_title, project_description, project_participant_num, project_leader) VALUES ('$title', '$description', '1', '$username')";
+			$sql_insert_participant = "INSERT INTO projects_active (project_title, account_username) VALUES ('$title', '$username')";
+			if ($link->query ( $sql_insert_project ) && $link->query ( $sql_insert_participant )) {
+				$create_state = 'Project created successfully';
+			} else {
+				$create_state = 'Failed to create project. Please try later';
+			}
 		}
 	}
 }
@@ -28,11 +38,13 @@ if(empty($create_state)) {
 		</div>
 		<div id="create_project_form_body">
 			<form action="" method="post">
-				<label for="project_title"><b>Project title</b></label><br> 
-				<input type="text" name="project_title" id="project_title" autofocus="autofocus"><label><?php echo $title_verify; ?></label><br><br> 
-				<label for="project_description"><b>Descriptions</b></label><br> 
-				<textarea name="project_description" rows="20" cols="100"></textarea> <br>
-				<input type="submit" name="create_project" id="create_project" value="Create project">
+				<label for="project_title"><b>Project title</b></label><br> <input
+					type="text" name="project_title" id="project_title"
+					autofocus="autofocus"><label><?php echo $title_verify; ?></label><br>
+				<br> <label for="project_description"><b>Descriptions</b></label><br>
+				<textarea name="project_description" rows="20" cols="100"></textarea>
+				<br> <input type="submit" name="create_project" id="create_project"
+					value="Create project">
 			</form>
 		</div>
 	</div>

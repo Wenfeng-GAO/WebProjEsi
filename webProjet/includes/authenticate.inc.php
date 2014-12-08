@@ -1,8 +1,4 @@
 <?php
-// location to redirect on success
-$redirect1 = 'http://localhost/project_esigelec/chercheur_list.php';
-$redirect2 = 'http://localhost/project_esigelec/project_mine.php';
-
 // open a MySQL connection
 include 'includes/connection.inc.php';
 
@@ -26,10 +22,10 @@ if($username == 'admin' && $password == 'admin') {
 
 // if the session variable has been set, redirect
 if(isset($_SESSION['authenticate1'])) {
-	header("Location: $redirect1");
+	header("Location: chercheur_list.php");
 	exit();
 } elseif (isset($_SESSION['authenticate2'])) {
-	header("Location: $redirect2");
+	header("Location: project_mine.php");
 	exit();
 }
 else {

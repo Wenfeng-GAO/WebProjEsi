@@ -1,4 +1,3 @@
-<?php include('./includes/title.inc.php'); ?>
 <?php include 'includes/logout.inc.php';?>
 
 <!DOCTYPE html>
@@ -6,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Project Management Platform<?php if(isset($title)) {echo "&#8212;$title";} ?></title>
+	<title>Files | Project Management Platform</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
