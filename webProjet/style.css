@@ -134,7 +134,7 @@ nav a:hover {
 
 #recent_news {
 	width: 60%;
-	margin: 32px auto 16px;
+	margin: 64px auto 16px;
 	background-color: #eee;
 	opacity: 0.6;
 	padding: 0px 8px 2px;
@@ -156,7 +156,7 @@ nav a:hover {
 
 #partner_imgs {
 	width: 60%;
-	margin: 32px auto 128px;
+	margin: 64px auto 128px;
 	background-color: #eee;
 	opacity: 0.6;
 	padding: 0px 8px 2px;
